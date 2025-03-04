@@ -22,7 +22,7 @@ const Search = () => {
         </div>
         <div className="search-panel__results">
           <SearchBox placeholder="" className="searchbox" />
-          <Hits hitComponent={Result} />
+          {/* <Hits hitComponent={Result} /> */}
           <div className="pagination">
             <Pagination />
           </div>

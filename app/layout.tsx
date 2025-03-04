@@ -26,16 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css"
         />
-      </head>
+      </head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AlgoliaInstantProvider>{children}</AlgoliaInstantProvider>
+        {children}
       </body>
     </html>
   );

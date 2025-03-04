@@ -1,12 +1,15 @@
-import React from 'react'
-import Search from './components/Search'
+import React from "react";
+import Search from "./components/Search";
+import AlgoliaInstantProvider from "./algolia-insta.provider";
 
-export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic";
 
 const Home = () => {
   return (
-    <Search />
-  )
-}
+    <AlgoliaInstantProvider>
+      <Search />
+    </AlgoliaInstantProvider>
+  );
+};
 
 export default Home;
